@@ -21,7 +21,7 @@ def push(stack, value):
 
 def pop(stack):
     if is_empty(stack):
-        raise IndexError("pop from empty stack")
+        raise IndexError("Пустой стек")
     return stack.value, stack.next
 
 
