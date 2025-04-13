@@ -47,9 +47,8 @@ def tokenize(expr):
     return tokens
 
 
-def infix_to_postfix(expression):
+def infix_to_postfix(expression, stack=None):
     output = []
-    stack = None
 
     tokens = tokenize(expression)
 
